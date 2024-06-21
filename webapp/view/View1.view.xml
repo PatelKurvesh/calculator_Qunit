@@ -1,0 +1,66 @@
+<mvc:View controllerName="calculator.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <form:SimpleForm
+                        editable="true"
+                        layout="ResponsiveGridLayout"
+                        title="calculator"
+                    >
+                        <Label text="number 1 " />
+                        <Input
+                            type="Number"
+                            width="200px"
+                            id="num1"
+                        />
+
+                        <Label text="number 2 " />
+                        <Input
+                            type="Number"
+                            width="200px"
+                            id="num2"
+                        />
+
+                        <Button
+                            text="Sum"
+                            id="sum"
+                            press="onSum"
+                        />
+                        <Button
+                            text="Sub"
+                            id="sub"
+                            press="onSub"
+                        />
+                        <Button
+                            text="Mul"
+                            id="mul"
+                            press="onMul"
+                        />
+                        <Button
+                            text="Div"
+                            id="div"
+                            press="onDiv"
+                        />
+
+                        <Label
+                            text="Ans "
+                            id="ans"
+                        />
+                        <Input
+                            type="Number"
+                            id="ans_inp"
+                        />
+
+                        <Button
+                            type="Reject"
+                            text="Clear"
+                            id="clear"
+                            press="onClear"
+                        />
+                    </form:SimpleForm>
+        
+        </content>
+    </Page>
+</mvc:View>
